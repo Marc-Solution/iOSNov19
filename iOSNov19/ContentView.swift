@@ -15,6 +15,9 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Tjena Tjena")
             Text("Tjena Tjena")
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
         }
         .padding()
     }
