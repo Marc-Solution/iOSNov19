@@ -27,6 +27,7 @@ struct ContentView: View {
             .background(Color.blue)
             
             Text("Mer nya saker")
+            Text("Nu är vi klara")
         }
         .padding()
     }
