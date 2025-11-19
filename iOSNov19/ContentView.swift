@@ -20,6 +20,11 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Tjena Tjena")
             Text("Tjena Tjena")
+            VStack {
+                Text("Ny funktion")
+            }
+            .padding()
+            .background(Color.blue)
         }
         .padding()
     }
