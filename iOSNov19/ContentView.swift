@@ -8,30 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var mynumber: Int = 0
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Mango")
-            Text("Tjena Tjena")
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Tjena Tjena")
-            Text("Tjena Tjena")
-            VStack {
-                Text("Ny funktion")
+           Text("Min Siffra är: \(mynumber)")
+                .font(.largeTitle)
+          
+            HStack {
+                Button("PLUS") {
+                    mynumber += 1
+                    }
+                Button("MINUS") {
+                    mynumber -= 1
+                    }
+                
             }
-            .padding(50)
-            .background(Color.blue.opacity( 0.3))
+            .padding(20)
             
-            Text("Mer nya saker")
-            Text("Nu är vi klara")
+            }
+            .padding(20)
         }
-        .padding()
+         
     }
-}
+
 
 #Preview {
     ContentView()
