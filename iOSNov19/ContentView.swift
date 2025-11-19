@@ -23,8 +23,8 @@ struct ContentView: View {
             VStack {
                 Text("Ny funktion")
             }
-            .padding()
-            .background(Color.blue)
+            .padding(50)
+            .background(Color.blue.opacity( 0.3))
             
             Text("Mer nya saker")
             Text("Nu är vi klara")
